@@ -78,7 +78,7 @@
 
 ## 二.运行环境
 1. ### 配置
-    1. 集成了local，dev，product三个环境，对应php.ini中的yaf.environ配置，具体请参考yaf_oss\conf\dev\application.ini
+    1. 集成了local，lan，dev，product四个环境，对应php.ini中的yaf.environ配置，具体请参考yaf_oss\conf\dev\application.ini
     1. yaf_oss\conf\errorcode.ini为错误代号，方便调试和查找错误，尤其是正式环境运行错误代号显得更重要，这部分也可以自己设计，更改请认真阅读相关源码。
     1. web入口文件为yaf_oss\public\index.php，cli入口文件为yaf_oss\yaf.php，可以在入口文件做一些全局操作，比如引入composer
 
