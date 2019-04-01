@@ -78,9 +78,9 @@
 
 ## 二.运行环境
 1. ### 配置
-    1. 集成了local，lan，dev，product四个环境，对应php.ini中的yaf.environ配置，具体请参考yaf_oss\conf\dev\application.ini
+    1. 集成了local，lan，dev，product四个环境，对应php.ini中的yaf.environ配置，具体请参考yaf-oss\conf\dev\application.ini
     1. yaf_oss\conf\errorcode.ini为错误代号，方便调试和查找错误，尤其是正式环境运行错误代号显得更重要，这部分也可以自己设计，更改请认真阅读相关源码。
-    1. web入口文件为yaf_oss\public\index.php，cli入口文件为yaf_oss\yaf.php，可以在入口文件做一些全局操作，比如引入composer
+    1. web入口文件为yaf-oss\public\index.php，cli入口文件为yaf_oss\yaf.php，可以在入口文件做一些全局操作，比如引入composer
 
 1. ### 集成
     1. library中集成了redis，file，log等操作类，为本源码使用的功能插件，自行结合yaf开发，不足之处可以自行修改
@@ -90,9 +90,9 @@
     1. web运行：作为示例源码，为了简单易懂并没有使用yaf的路由，即{{host}}/oss/sts/token对应的模块是**oss**，控制器是**Sts**Controller，方法是**token**Action()，实际使用中需要的话请自行加入yaf路由
     2. cli运行：由于本系统有cache文件缓冲机制，需要运行定时命令，进入yaf_oss根目录，运行php yaf.php File/Recovery/delCache清理过期文件，建议配置在linux定时任务crond中，示例：
     ```
-    0 1 * * *  cd /usr/www/yaf_oss ; php yaf.php File/Recovery/delCache
+    0 1 * * *  cd /usr/www/yaf-oss ; php yaf.php File/Recovery/delCache
     ```
-    运行的对应方法是yaf_oss\application\library\command\中的**File**目录**Recovery**.php中的**delCache**()，可以仿造此模式编写其它cli脚本
+    运行的对应方法是yaf-oss\application\library\command\中的**File**目录**Recovery**.php中的**delCache**()，可以仿造此模式编写其它cli脚本
     
 ## 三. 接口文档
 详情请见api.md
