@@ -98,6 +98,5 @@ grammar_cjkRuby: true
     ```
     运行的对应方法是yaf_oss\application\library\command\中的**File**目录**Recovery**.php中的**delCache**()，可以仿造此模式编写其它cli脚本
     
-## 三.接口文档
+## 三. 接口文档
 详情请见api接口.md
-
