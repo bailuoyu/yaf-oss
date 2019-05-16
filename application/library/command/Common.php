@@ -34,8 +34,8 @@ class Common{
             $Class = get_called_class();
             $content = "[{$Class}]".PHP_EOL.$msg;
             $path = 'cli';
-            $name = 'error_'.date('Y-d-m');
-            $content = '<'.date('Y-d-m H:i:s').'>'.PHP_EOL.$content;
+            $name = 'error_'.date('Y-m-d');
+            $content = '<'.date('Y-m-d H:i:s').'>'.PHP_EOL.$content;
             $Log -> write($path,$name,$content);
         }
         throw new \Error($e);
