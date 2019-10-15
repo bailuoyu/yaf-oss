@@ -204,7 +204,6 @@ POST {{host}}/oss/file/upload
 |`application`|string|1|应用:www,admin,master;common为公共文件|admin|
 |`ownership`|string|0|public为公共读(默认值)，private为私有读|public|
 |`expire`|string|0|时效，默认永久，为cache时则为临时,24小时后删除||
-|`tid`|string|0|厅主id，application为www,admin时必填||
 |`relative_path`|string|0|相对路径||
 
 
